@@ -4,7 +4,7 @@ COPY . /github.com/codeboris/pocket_telegram_bot/
 WORKDIR /github.com/codeboris/pocket_telegram_bot/
 
 RUN go mod download
-RUN go build -o ./bin/bot cmd/bo/main.go
+RUN go build -o ./bin/bot cmd/bot/main.go
 
 FROM alpine:latest
 
